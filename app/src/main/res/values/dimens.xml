@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- dimensions for font -->
+    <dimen name="font_huge">36sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+
+    <!-- dimensions for margin -->
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="margin_large">36dp</dimen>
+    <dimen name="margin_big">24dp</dimen>
+    <dimen name="margin_normal">18dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_very_small">8dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+
+    <!-- dimensions for padding -->
+    <dimen name="padding_big">24dp</dimen>
+    <dimen name="padding_very_small">8dp</dimen>
+
+    <!-- dimensions for card -->
+    <dimen name="card_width">260dp</dimen>
+    <dimen name="card_height">360dp</dimen>
+
+</resources>

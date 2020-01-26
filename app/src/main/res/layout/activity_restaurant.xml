@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_restaurant_banner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/coffee_1"
+        android:contentDescription="@string/content_description_restaurant"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_restaurant_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_restaurant_banner"
+        android:background="#50000000"
+        android:paddingTop="@dimen/padding_very_small"
+        android:paddingBottom="@dimen/padding_very_small"
+        android:paddingLeft="@dimen/padding_big"
+        android:paddingRight="@dimen/padding_big"
+        style="@style/title_banner" />
+
+    <RelativeLayout
+        android:id="@+id/rl_back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle"
+        android:layout_margin="@dimen/margin_normal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_white_36"
+            android:layout_margin="@dimen/margin_very_small"
+            android:contentDescription="@string/content_description_back_button" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_restaurant_banner">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_vibe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_vibe_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="@string/title_vibe"
+                    android:textAllCaps="true"
+                    style="@style/restaurant_title" />
+
+                <TextView
+                    android:id="@+id/tv_vibe_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_vibe_title"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textAlignment="center"
+                    style="@style/restaurant_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_below="@id/rl_vibe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_big"
+                    android:text="@string/title_address"
+                    style="@style/restaurant_title" />
+
+                <TextView
+                    android:id="@+id/tv_address_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_address_title"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_very_small"
+                    style="@style/restaurant_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hours"
+                android:layout_below="@id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_hours_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_big"
+                    android:text="@string/title_hours"
+                    style="@style/restaurant_title" />
+
+                <TextView
+                    android:id="@+id/tv_hours_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_hours_title"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_very_small"
+                    style="@style/restaurant_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

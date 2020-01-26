@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Coffee Hub</string>
+    <string name="navigation_discover">Discover</string>
+    <string name="navigation_notes">Notes</string>
+    <string name="navigation_profile">Profile</string>
+    <string name="discover_subtitle">Coffee Shops in Toronto</string>
+    <string name="content_description_discover_card">Discover Restaurant Image</string>
+    <string name="content_description_restaurant">Restaurant Image</string>
+    <string name="content_description_back_button">Back Button</string>
+    <string name="title_vibe">The vibe</string>
+    <string name="title_address">Address</string>
+    <string name="title_hours">Hours</string>
+</resources>
